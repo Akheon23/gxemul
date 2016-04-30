@@ -1,5 +1,13 @@
-language: c++
+language: C++
 
-compiler: gcc
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+
+
+compiler:
+       - gcc
+     
+
+    
+
+
+before_install: sudo apt-get upgrade -y && sudo apt-get -f install && configure && make 
+install: true
